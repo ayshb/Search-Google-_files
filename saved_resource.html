@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://fiddle.jshell.net/aybalasubramanian/HQ8mR/show/light/ -->
+<html><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title> - jsFiddle demo by aybalasubramanian</title>
+  
+  <script type="text/javascript" src="dummy.js"></script><style type="text/css"></style>
+  
+  
+  
+  
+  <link rel="stylesheet" type="text/css" href="result-light.css">
+  
+  <style type="text/css">
+    
+  </style>
+  
+
+
+<script type="text/javascript">//<![CDATA[ 
+window.onload=function(){
+(function() {
+    var id = document.getElementById('search-form');
+    if (id && id.txtInput) {
+      var name = id.txtInput;
+      var unclicked = function() {
+          if (name.value == '') {
+              name.style.background = '#FFFFFF url(http://img.informer.com/icons/png/16/3661/3661821.png) left no-repeat';
+          }
+       };
+       var clicked = function() {
+          name.style.background = '#ffffff';
+       };
+    name.onfocus = clicked;
+    name.onblur = unclicked;
+    unclicked();
+    }
+  })();
+}//]]>  
+
+</script>
+
+
+</head>
+<body>
+  <form name="searchform" id="search-form">
+   <div>
+       <b>Search</b>
+       <input type="text" name="txtInput" title="Enter the terms you wish to search for." style="background: url(http://img.informer.com/icons/png/16/3661/3661821.png) 0% 50% no-repeat rgb(255, 255, 255);">
+       <input type="submit" value="GO!" class="submit" style="cursor: pointer;">
+   </div>
+</form>
+  
+
+
+
+
+
+</body></html>
